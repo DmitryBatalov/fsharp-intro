@@ -1,0 +1,11 @@
+RESTRICTION: >= net461
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FSharp.Charting (0.91.1)
+    FSharp.Core (4.2.3)
+    FSharp.Data (2.4.2)
+    FSharp.Data.Toolbox.Twitter (0.19)
+      FSharp.Data (>= 2.2.3)
+    FSharp.Text.RegexProvider (1.0)
+    SQLProvider (1.1.18)
+    System.Data.SQLite.Core (1.0.105.2)

@@ -1,0 +1,7 @@
+FSharp.Core
+FSharp.Text.RegexProvider
+FSharp.Data
+FSharp.Data.Toolbox.Twitter
+SQLProvider
+System.Data.SQLite.Core
+FSharp.Charting
