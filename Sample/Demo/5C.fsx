@@ -214,7 +214,7 @@ let fetchUrlAsync url =
         use! resp = req.AsyncGetResponse()  // new keyword "use!"  
         use stream = resp.GetResponseStream() 
         use reader = new IO.StreamReader(stream) 
-        let html = reader.ReadToEnd() 
+        let html = reader.ReadToEnd()
         printfn "finished downloading %s" url 
         }
 

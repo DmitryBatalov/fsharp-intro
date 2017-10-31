@@ -169,12 +169,6 @@ The most recent versions of F# greatly simplify data-rich programming through th
     // all values immutable by default
     person1.First <- "new name"  //assignment error
 
-    // never have to check for nulls
-    let makeNewString str =
-        //str can always be appended to safely
-        let newString = str + " new!"
-        newString
-
     // units of measure
     let distance = 10<m> + 10<ft> // error!
 
@@ -222,6 +216,8 @@ The most recent versions of F# greatly simplify data-rich programming through th
     let len2 = match s2 with
     | Some s -> s.Length
     | None -> 0
+
+https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare
 
 ---
 

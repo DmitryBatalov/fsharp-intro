@@ -17,6 +17,22 @@ PhoneRegex().TypedMatch("425-123-2345").AreaCode.Value
 EmailRegex().TypedMatch("dmitry.batalov@fastdev.se").UserId.Value
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ======================= CSV =================================
 // http://fsharp.github.io/FSharp.Data/library/CsvProvider.html
 #I "../packages/FSharp.Data/lib/net45"
@@ -29,6 +45,25 @@ let msft = Stocks.Load("http://www.google.com/finance/historical?q=MSFT&output=c
 let firstRow = msft.Rows |> Seq.head
 let lastDate = firstRow.Date
 let lastOpen = firstRow.Open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -52,6 +87,28 @@ let twitter = Twitter.AuthenticateAppOnly(key, secret)
 
 for status in twitter.Search.Tweets("#fsharp", count=2).Statuses do
   printfn "@%s: %s" status.User.ScreenName status.Text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ======================= HTTP =================================  
@@ -110,8 +167,25 @@ printfn "Versions: %A" versions
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ======================= SQL =================================  
 // https://fsprojects.github.io/SQLProvider/index.html
+// DB: http://www.sqlitetutorial.net/sqlite-sample-database/
 // reference the type provider dll
 #I "../packages/SQLProvider/lib/net451"
 #I "../packages/System.Data.SQLite.Core/lib/net451/"
